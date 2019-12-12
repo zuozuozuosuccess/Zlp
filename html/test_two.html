@@ -355,7 +355,10 @@
         <div class="lunbo"></div>
     </div>
 </body>
+<script type="text/javascript"  src="./../js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript"  src="./../js/jquery-3.3.1.min.js"></script>
 <script>
+
     //轮播
     var out = document.getElementsByClassName("out").item(0);
     var left = document.getElementsByClassName("left").item(0);
@@ -421,5 +424,93 @@
     right.onmouseout = function () {
         timer1 = setInterval(right.onclick, 3000);
     };
+	
+	
+	
+	
+	 $(document).ready(function () {
+        var animated = false;
+        $(".pic4").mouseenter(function () {
+            // $('.test4').animate({ height: '67px', width:'300px',opacity: '0.5' }, "slow");
+            // $('.test4').animate({'height':'67px','marginTop':'303px',opacity: '0.5' }, "slow");
+           // $('.test4').animate({ 'height': '67px', opacity: '0.5' }, "slow");
+            //$('.test4').animate({'width':'300px','right':'300px',opacity: '0.5' }, "slow");
+            $(".test4").stop().animate({ 'height': '67px', opacity: '0.5' },"slow");
+        });
+        $(".pic4").mouseleave(function () {
+           // $('.test4').animate({ 'height': '0px', opacity: '0' }, "slow");
+            $(".test4").stop().animate({ 'height': '0px', opacity: '0' },"slow");
+        })
+        $(".pic3").mouseenter(function () {
+            // if (!animated) {
+            //         animated=true;
+            //         $(".test3").animate({ 'height': '67px', opacity: '0.5' }, "slow", function () {
+            //             animated=false;
+            //         });
+            //     }
+            $(".test3").stop().animate({ 'height': '67px', opacity: '0.5' },"slow");
+           // $('.test3').animate({ 'height': '67px', opacity: '0.5' }, "slow");
+        });
+        $(".pic3").mouseleave(function () {
+            $(".test3").stop().animate({ 'height': '0px', opacity: '0' },"slow");
+            //$('.test3').animate({ 'height': '0px', opacity: '0' }, "slow");
+        })
+        $(".pic5").mouseenter(function () {
+           // $('.test5').animate({ 'height': '67px', opacity: '0.5' }, "slow");
+            $(".test5").stop().animate({ 'height': '67px', opacity: '0.5' },"slow");
+        });
+        $(".pic5").mouseleave(function () {
+           // $('.test5').animate({ 'height': '0px', opacity: '0' }, "slow");
+            $(".test5").stop().animate({ 'height': '0px', opacity: '0' },"slow");
+        })
+        $(".pic6").mouseenter(function () {
+            //$('.test6').animate({ 'height': '67px', opacity: '0.5' }, "slow");
+            $(".test6").stop().animate({ 'height': '67px', opacity: '0.5' },"slow");
+        });
+        $(".pic6").mouseleave(function () {
+            //$('.test6').animate({ 'height': '0px', opacity: '0' }, "slow");
+            $(".test6").stop().animate({ 'height': '0px', opacity: '0' },"slow");
+        })
+        $(".pic7").mouseenter(function () {
+            //$('.test7').animate({ 'height': '67px', opacity: '0.5' }, "slow");
+            $(".test7").stop().animate({ 'height': '67px', opacity: '0.5' },"slow");
+        });
+        $(".pic7").mouseleave(function () {
+           // $('.test7').animate({ 'height': '0px', opacity: '0' }, "slow");
+            $(".test7").stop().animate({ 'height': '0px', opacity: '0' },"slow");
+        })
+        $(".pic8").mouseenter(function () {
+            //$('.test8').animate({ 'height': '67px', opacity: '0.5' }, "slow");
+            $(".test8").stop().animate({ 'height': '67px', opacity: '0.5' },"slow");
+        });
+        $(".pic8").mouseleave(function () {
+           // $('.test8').animate({ 'height': '0px', opacity: '0' }, "slow");
+            $(".test8").stop().animate({ 'height': '0px', opacity: '0' },"slow");
+        })
+        $(".pic9").mouseenter(function () {
+            //$('.test9').animate({ 'height': '67px', opacity: '0.5' }, "slow");
+            $(".test9").stop().animate({ 'height': '67px', opacity: '0.5' },"slow");
+        });
+        $(".pic9").mouseleave(function () {
+           // $('.test9').animate({ 'height': '0px', opacity: '0' }, "slow");
+            $(".test9").stop().animate({ 'height': '0px', opacity: '0' },"slow");
+        })
+        $(".pic10").mouseenter(function () {
+            //$('.test10').animate({ 'height': '67px', opacity: '0.5' }, "slow");
+            $(".test10").stop().animate({ 'height': '67px', opacity: '0.5' },"slow");
+        });
+        $(".pic10").mouseleave(function () {
+           // $('.test10').animate({ 'height': '0px', opacity: '0' }, "slow");
+            $(".test10").stop().animate({ 'height': '0px', opacity: '0' },"slow");
+        })
+        $(".pic11").mouseenter(function () {
+            //$('.test11').animate({ 'height': '67px', opacity: '0.5' }, "slow");
+            $(".test11").stop().animate({ 'height': '67px', opacity: '0.5' },"slow");
+        });
+        $(".pic11").mouseleave(function () {
+           // $('.test11').animate({ 'height': '0px', opacity: '0' }, "slow");
+            $(".test11").stop().animate({ 'height': '0px', opacity: '0' },"slow");
+        })
+    });
 </script>
 </html>
