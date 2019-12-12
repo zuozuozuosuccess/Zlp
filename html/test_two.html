@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>三张图轮播效果</title>
+    <style>
+      .product-cont .lunbo{
+    width: 100%;
+    height: 303px;
+    margin-top: -330px;
+    margin-bottom: -100px;
+    background-color: #f0f0f0;
+}
+.product-cont  .cont-title {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 50px;
+    color: #000;
+    padding-bottom: 50px;
+    position: relative;
+    text-align: center;
+    padding-top: 50px;
+}
+.product-cont{
+    color: #151515;
+    padding-bottom: 100px;
+}
+.product-cont .cont-title:after {
+    content: '';
+    display: block;
+    width: 38px;
+    border-bottom: 1px solid #000;
+    position: absolute;
+    left: calc(50% - 19px);
+    margin-top: 10px;
+}
+.product-cont .product .product-list > p{
+    text-align: left;
+    font-size: 14px;
+    line-height: 24px;
+    color: #707070;
+    padding: 0 30px;
+}
+.product-cont .product .product-list > p.product-text{
+    margin-bottom: 20px;
+}
+.in img {
+    width: 300px;
+    height: 369px;
+    float: left;
+    padding-left: 50px;
+}
+.in {
+    width:5500px;
+    position: absolute;
+}
+.out {
+    width: 1000px;
+    height: 369px;
+    overflow:hidden;
+    margin: 80px auto;
+    position: relative;
+    
+}
+.left {
+    width: 22px;
+    height: 39px;
+    left: 160px;
+    background-image: url("../img/left.png");
+    position: absolute;
+    margin-top: -290px;
+}
+.right {
+    width: 22px; 
+    height: 39px;
+    background-image: url("../img/right.png");
+    position: absolute;
+    right: 160px;
+    margin-top: -290px;
+} 
+.in .pic {
+    display: block;
+    background-color:#dbdbdb;
+    width: 300px;
+    height: 369px;
+    background-image: url("../img/7.jpg") ;
+    background-size: 300px 369px;
+    margin-left: 50px;
+    float: left;
+}
+.in .pic1 {
+    display: block;
+    background-color:#dbdbdb;
+    width: 300px;
+    height: 369px;
+    background-image: url("../img/8.jpg") ;
+    background-size: 300px 369px;
+    margin-left: 50px;
+    float: left;
+}
+.in .pic2 {
+    display: block;
+    background-color:#dbdbdb;
+    width: 300px;
+    height: 369px;
+    background-image: url("../img/9.jpg") ;
+    background-size: 300px 369px;
+    margin-left: 50px;
+    float: left;
+}
+.in .pic3 {
+    display: block;
+    background-color:#dbdbdb;
+    width: 300px;
+    height: 369px;
+    background-image: url("../img/1.jpg") ;
+    background-size: 300px 369px;
+    margin-left: 50px;
+    float: left;
+}
+.in .pic4 {
+    display: block;
+    background-color:#dbdbdb;
+    width: 300px;
+    height: 369px;
+    background-image: url("../img/2.jpg") ;
+    background-size: 300px 369px;
+    margin-left: 50px;
+    float: left;
+}
+.in .pic5 {
+    display: block;
+    background-color:#dbdbdb;
+    width: 300px;
+    height: 369px;
+    background-image: url("../img/3.jpg") ;
+    background-size: 300px 369px;
+    margin-left: 50px;
+    float: left;
+}
+.in .pic6 {
+    display: block;
+    background-color:#dbdbdb;
+    width: 300px;
+    height: 369px;
+    background-image: url("../img/face4.png") ;
+    background-size: 300px 369px;
+    margin-left: 50px;
+    float: left;
+}
+.in .pic7 {
+    display: block;
+    background-color:#dbdbdb;
+    width: 300px;
+    height: 369px;
+    background-image: url("../img/5.jpg") ;
+    background-size: 300px 369px;
+    margin-left: 50px;
+    float: left;
+}
+.in .pic8 {
+    display: block;
+    background-color:#dbdbdb;
+    width: 300px;
+    height: 369px;
+    background-image: url("../img/6.jpg") ;
+    background-size: 300px 369px;
+    margin-left: 50px;
+    float: left;
+}
+.in .pic9 {
+    display: block;
+    background-color:#dbdbdb;
+    width: 300px;
+    height: 369px;
+    background-image: url("../img/7.jpg") ;
+    background-size: 300px 369px;
+    margin-left: 50px;
+    float: left;
+}
+.in .pic10 {
+    display: block;
+    background-color:#dbdbdb;
+    width: 300px;
+    height: 369px;
+    background-image: url("../img/8.jpg") ;
+    background-size: 300px 369px;
+    margin-left: 50px;
+    float: left;
+}
+.in .pic11 {
+    display: block;
+    background-color:#dbdbdb;
+    width: 300px;
+    height: 369px;
+    background-image: url("../img/9.jpg") ;
+    background-size: 300px 369px;
+    margin-left: 50px;
+    float: left;
+}
+.in .pic12 {
+    display: block;
+    background-color:#dbdbdb;
+    width: 300px;
+    height: 369px;
+    background-image: url("../img/1.jpg") ;
+    background-size: 300px 369px;
+    margin-left: 50px;
+    float: left;
+}
+.in .pic13 {
+    display: block;
+    background-color:#dbdbdb;
+    width: 300px;
+    height: 369px;
+    background-image: url("../img/2.png") ;
+    background-size: 300px 369px;
+    margin-left: 50px;
+    float: left;
+}
+.in .pic14 {
+    display: block;
+    background-color:#dbdbdb;
+    width: 300px;
+    height: 369px;
+    background-image: url("../img/3.jpg") ;
+    background-size: 300px 369px;
+    margin-left: 50px;
+    float: left;
+}
+.childss {
+    width: 300px;
+    height: 0px;
+    background-color:#000000;
+    opacity: 0;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: normal;
+    position: absolute;
+    bottom: 0;
+}
+.childss p{
+	font-family: Segoe UI;
+    font-size: 20px;
+    padding-top: 20px;
+    margin-right: 28px;
+    font-weight: normal;
+    float: right;
+    color: #ffffff;
+    padding-bottom: 20px;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="product-cont">
+        <div class="product">
+            <p class="cont-title">11111111</p>
+            <div class="product-list">
+                <p class="product-text" style="text-indent: 30px;">
+                    22222222
+                </p>
+            </div>
+        </div>
+        <div class="scene2">
+            <div class="out">
+                <div class="in clearFix" style="left: -1100px;">
+                    <div class="pic">
+                        <div class="childss test">
+                            <p>厕纸机</p>
+                        </div>
+                    </div>
+                    <div class="pic1">
+                        <div class="childss test1">
+                            <p>单元门禁</p>
+                        </div>
+                    </div>
+                    <div class="pic2">
+                        <div class="childss test2">
+                            <p>考勤门禁</p>
+                        </div>
+                    </div>
+                    <!-- 第二组 -->
+                    <div class="pic3">
+                        <div class="childss test3">
+                            <p>厕纸机</p>
+                        </div>
+                    </div>
+                    <div class="pic4">
+                        <div class="childss test4">
+                            <p>单元门禁</p>
+                        </div>
+                    </div>
+                    <div class="pic5">
+                        <div class="childss test5">
+                            <p>考勤门禁</p>
+                        </div>
+                    </div>
+                    <!-- 第三组 -->
+                    <div class="pic6">
+                        <div class="childss test6">
+                            <p>人脸识别闸机头</p>
+                        </div>
+                    </div>
+                    <div class="pic7">
+                        <div class="childss test7">
+                            <p>人脸考勤机</p>
+                        </div>
+                    </div>
+                    <div class="pic8">
+                        <div class="childss test8">
+                            <p>人脸签到机</p>
+                        </div>
+                    </div>
+                    <!-- 第四组 -->
+                    <div class="pic9">
+                        <div class="childss test9">
+                            <p>人脸识别闸机</p>
+                        </div>
+                    </div>
+                    <div class="pic10">
+                        <div class="childss test10">
+                            <p>校园班牌</p>
+                        </div>
+                    </div>
+                    <div class="pic11">
+                        <div class="childss test11">
+                            <p>迎宾机</p>
+                        </div>
+                    </div>
+                    <!-- 第五组 -->
+                    <div class="pic12">
+                        <div class="childss test12">
+                            <p>厕纸机</p>
+                        </div>
+                    </div>
+                    <div class="pic13">
+                        <div class="childss test13">
+                            <p>单元门禁</p>
+                        </div>
+                    </div>
+                    <div class="pic14">
+                        <div class="childss test14">
+                            <p>考勤门禁</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="shodow"></div>
+            </div>
+        </div>
+        <div class="left"></div>
+        <div class="right"></div>
+        <div class="lunbo"></div>
+    </div>
+</body>
+<script>
+    //轮播
+    var out = document.getElementsByClassName("out").item(0);
+    var left = document.getElementsByClassName("left").item(0);
+    var right = document.getElementsByClassName("right").item(0);
+    var myin = document.getElementsByClassName("in").item(0);
+    var zt = true;
+    var timer = null;
+    var lilist = document.getElementsByTagName("li");
+    var index1 = 0;
+    var timer1 = null;
+    right.onclick = function () {
+        if (zt == true) {
+            move(-1050);
+        }
+    };
+    left.onclick = function () {
+        if (zt == true) {
+            move(1050);
+        }
+    };
+    function move(dis) {
+        zt = false;
+        var newweizhi = parseInt(myin.style.left) + dis;
+        var time = 1000;
+        var interval = 10;
+        var every = dis / (time / interval);
+        function meici() {
+            if (every < 0 && parseInt(myin.style.left) > newweizhi || every > 0 && parseInt(myin.style.left) < newweizhi) {
+                myin.style.left = parseInt(myin.style.left) + every + 'px';
+                setTimeout(meici, 10)
+            } else {
+                myin.style.left = newweizhi + 'px';
+                clearInterval(timer);
+                zt = true;
+                if (newweizhi == -4250) {
+                    myin.style.left = -1100 + "px";
+                }
+                if (newweizhi == -50) {
+                    myin.style.left = -3200 + "px";
+                }
+
+            }
+        }
+        meici();
+    }
+
+    timer1 = setInterval(right.onclick, 3000);
+    out.onmouseover = function () {
+        clearInterval(timer1);
+    };
+    left.onmouseover = function () {
+        clearInterval(timer1);
+    };
+    right.onmouseover = function () {
+        clearInterval(timer1);
+    };
+    out.onmouseout = function () {
+        timer1 = setInterval(right.onclick, 3000);
+    }
+    left.onmouseout = function () {
+        timer1 = setInterval(right.onclick, 3000);
+    };
+    right.onmouseout = function () {
+        timer1 = setInterval(right.onclick, 3000);
+    };
+</script>
+</html>
